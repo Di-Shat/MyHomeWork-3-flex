@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit');
+@import url('https://fonts.googleapis.com/css?family=Noticia+Text');
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+}
+header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to top, #E4AF9D 20%, rgb(223, 122, 122) 80%);
+    padding: 5px;
+    flex-wrap: wrap;
+}
+header img{
+    border-radius: 50%;
+    border: 2px solid rgb(196, 193, 193);
+}
+nav ul{
+    display: flex;
+    flex-direction:row;
+}
+nav ul li{
+    margin: 40px;
+    list-style: none;
+    font-family: "Kanit", sans-serif;
+}
+nav a{
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+nav a:hover{
+color: rgb(16, 129, 173);
+}
+input{
+    border-radius: 42px;
+    border: 2px solid gray;
+    width: 200px;
+    height: 30px;
+    padding-left: 20px;
+    padding-right: 15px;
+    background: rgb(236, 236, 236);
+    outline: none;
+    transition:.2s linear;
+}
+input:focus{
+    width: 250px;
+    background: rgba(107, 208, 248, 0.521);
+}
+.submenu{
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    background: rgb(206, 99, 99);
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow:inset 0px 2px 2px rgba(22, 2, 2, 0.5);
+}
+.submenu ul{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+list-style: none;
+text-transform: uppercase;
+flex-wrap: wrap;
+}
+.submenu ul li{
+    border: 1px solid grey;
+    margin-left: 50px;
+    border-radius: 42px;
+    padding: 5px 45px;
+    background:linear-gradient(to bottom, #E4AF9D 20%, rgb(223, 122, 122) 60%);
+    font-family: "Kanit", sans-serif;
+}
+.submenu ul li:hover{
+    background: rgb(201, 180, 180);
+}
+.submenu ul li a{
+    color: black;
+    text-decoration: none;
+}
+.submenu ul a:hover {
+    color: rgb(16, 129, 173); 
+}
+.content{
+display: flex;
+flex-direction: row;
+min-height: 100%;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    background: rgba(223, 209, 209, 0.76);
+    box-shadow:inset -0px 3px 3px rgba(22, 2, 2, 0.5);
+}
+section h2{
+    display: flex;
+justify-content: center;
+padding: 30px  0px 30px;
+}
+section p{
+    text-indent: 50px;
+    padding: 0px 20px;
+    line-height: 1.5;
+    flex-grow: 1;
+    font-size: 20px;
+    padding-bottom: 50px;
+    font-family: "Noticia+Text", sans-serif;
+}
+footer{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background:rgb(235, 163, 139);
+    height: 100px;
+}
+aside{
+    background:linear-gradient(to top, #E4AF9D 50%, rgb(223, 122, 122) 80%);
+    box-shadow:-1px 0px 0px rgba(22, 2, 2, 0.5);
+}
+aside ul{
+    list-style: none;
+    padding: 0px 50px;
+}
+aside ul li{
+    margin-top: 40px;
+    font-family: "Kanit", sans-serif;
+}
+aside ul a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid gray;
+    padding: 5px 30px;
+    border-radius: 42px;
+    background:linear-gradient(to bottom, #E4AF9D 20%, rgb(223, 122, 122) 60%);
+}
+aside ul a:hover{
+    color: rgb(16, 129, 173);
+}
+@media screen and (max-width: 850px) {
+    aside{
+      display: none;
+  }
+  nav ul li a{
+      font-size: 15px;
+  }
+  .submenu ul li{
+    padding: 5px 9px;
+    margin: 5px 10px;
+}
+    }
+    @media screen and (max-width: 350px)  {
+        nav ul{
+            display: flex;
+            flex-direction: column;
+        }
+        nav ul li{
+            margin: 10px;
+        }
+    }
